@@ -1,0 +1,28 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-size: 0;
+}
+
+.social__item {
+  display: inline-block;
+  height: 12px;
+  padding: 0 3px;
+  margin: 0;
+  border-right: 2px solid @text-color-menu;
+
+  &:first-child {
+    padding-right: 5px;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.social__link {
+  color: @text-color-menu;
+  font-size: @font-size-mini - 1px;
+}

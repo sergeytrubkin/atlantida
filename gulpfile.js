@@ -63,11 +63,11 @@ gulp.task("symbols", function() {
   }))
   .pipe(rename("symbols.svg"))
   .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("copy", function() {
   return gulp.src([
-    "src/fonts/**/*.{woff,woff2,eot}",
+    "src/fonts/**/*.{woff,woff2,eot,ttf,otf}",
     "src/img/**",
     "src/js/**",
     "src/*.html"
@@ -78,7 +78,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("clean", function() {
-  return del("build")
+  return del("build");
 });
 
 gulp.task("deploy", function() {
@@ -107,6 +107,6 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("src/less/**/*.less", ["style"]);
-  gulp.watch("src/js/**/*.js", ["minjs"]);
+  gulp.watch("src/js/**/*.js", ["minjs"]).on("change", server.reload);
   gulp.watch("src/*.html", ["html"]).on("change", server.reload);
 });

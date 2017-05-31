@@ -1,8 +1,60 @@
-body {
+@font-face {
+  font-family: "Crimson Text";
+  src: url("../fonts/crimsontext.woff2") format("woff2"),
+    url("../fonts/crimsontext.woff") format("woff"),
+    url("../fonts/crimsontext.ttf") format("truetype");
+  font-weight: @font-weight-normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+  font-weight: @font-weight-normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.otf") format("opentype");
+  font-weight: @font-weight-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amsdam";
+  src: url("../fonts/Amsdam.ttf") format("truetype");
+  font-weight: @font-weight-normal;
+  font-style: normal;
+}
+
+body {
+  max-width: 1600px;
+  // min-width: 1065px;
+  width: 100%;
+  font-family: @font-family;
+  font-size: @font-size-normal;
+  font-weight: @font-weight-normal;
+  background-color: @bg-color;
+  color: @text-color;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+h3 {
+  display: block;
+  padding-bottom: 30px;
+  margin: 0;
+
+  background-image: url("../img/wave.png");
+  background-position: center bottom;
+  background-repeat: no-repeat, repeat-x;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Amsdam";
+  font-size: @font-size-bigger;
 }

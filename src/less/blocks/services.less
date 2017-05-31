@@ -1,0 +1,126 @@
+.services {
+  background-image: url("../img/services-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.services__wrapper {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 70px 0 80px 0;
+
+  color: @text-color-light;
+}
+
+.services__heading {
+  margin-bottom: 35px;
+
+  background-image: url("../img/wave-light.png");
+}
+
+.services__text {
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 1170px) {
+    flex-direction: column;
+  }
+}
+
+.services__item {
+  position: relative;
+  width: 23%;
+  min-width: 150px;
+  padding: 45px 30px 40px 30px;
+  box-sizing: border-box;
+
+  text-align: center;
+  border: 1px solid @border-color-light;
+  border-top: 0;
+
+  @media (max-width: 1170px) {
+    align-self: center;
+
+    width: 50%;
+    min-width: 300px;
+    margin-bottom: 40px;
+  }
+}
+
+.services__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 35%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.services__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 35%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.services__icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  width: 35px;
+  height: 35px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--first {
+    background-image: url("../img/Idea.png");
+  }
+
+  &--second {
+    background-image: url("../../img/Monitor.png");
+  }
+
+  &--third {
+    background-image: url("../img/Combo-chart.png");
+  }
+
+  &--fourth {
+    background-image: url("../img/word-press.png");
+  }
+}
+
+.services__item-name {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 10%;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: @font-weight-normal;
+  font-family: "Montserrat";
+}
+
+.services__item-text {
+  margin: 0;
+  padding: 0;
+}

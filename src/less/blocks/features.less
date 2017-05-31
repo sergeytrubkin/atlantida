@@ -1,0 +1,41 @@
+.features__wrapper {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.features__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 270px;
+  height: 170px;
+
+  border-right: 1px solid #b0b0b0;
+
+  font-family: "Montserrat";
+  text-transform: uppercase;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.features__name {
+  line-height: @line-height-mini;
+}
+
+.features__numbers {
+  font-size: @fotn-size-medium + 9px;
+}
