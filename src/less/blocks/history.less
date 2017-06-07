@@ -1,0 +1,191 @@
+.history {
+  background-color: @bg-color-section-history;
+}
+
+.history__wrapper {
+  width: 80%;
+  max-width: 1170px;
+  padding: 55px 0 55px 0;
+  margin: 0 auto;
+}
+
+.history__heading {
+  margin-bottom: 35px;
+}
+
+.history__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.history__vertical {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+
+  font-family: "Montserrat";
+}
+
+.history__vertical-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 2px;
+  height: 100%;
+
+  background-color: @border-color;
+}
+
+.history__year {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 40px auto;
+
+  background-color: @bg-color-section-history;
+
+  line-height: 70px;
+  text-align: center;
+
+  border-radius: 50%;
+  border: 2px solid @border-color;
+  z-index: 10;
+
+  &--bg {
+    background: @border-color url("../../img/Idea.png") center center no-repeat / 50% 50%;
+  }
+}
+
+.history__row-block-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 10px;
+
+  @media (max-width: 1479px) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+  }
+}
+
+.history__post {
+  position: relative;
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  background-color: @bg-color-section-history;
+  border: 2px solid @border-color;
+
+  text-align: justify;
+  color: @text-color;
+  text-decoration: none;
+
+  &:last-child {
+    margin-top: 40px;
+  }
+
+  &:hover {
+    background-color: @bg-color-dark;
+    color: @bg-color-section-history;
+  }
+
+  @media (min-width: 1480px) {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1480px) {
+
+  .history__post:first-child::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    transform: skew(-45deg) translateX(8px);
+
+    width: 9px;
+    height: 9px;
+
+    background-color: @bg-color-section-history;
+
+    border: 2px solid @border-color;
+    border-left: 0;
+    border-bottom: 0;
+  }
+
+  .history__post:first-child::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -33px;
+    transform: translateY(-50%);
+
+    width: 15px;
+    height: 15px;
+
+    background-color: @border-color;
+
+    border-radius: 50%;
+  }
+
+  .history__post:last-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transform: skew(45deg) translateX(-8px);
+
+    width: 9px;
+    height: 9px;
+
+    background-color: @bg-color-section-history;
+
+    border: 2px solid @border-color;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .history__post:last-child::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -33px;
+    transform: translateY(-50%);
+
+    width: 15px;
+    height: 15px;
+
+    background-color: @border-color;
+
+    border-radius: 50%;
+  }
+}
+
+.history__post:first-child:hover::before, .history__post:last-child:hover::before {
+  background-color: @border-color;
+}
+
+.history__post-heading {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: @font-size-mini;
+  text-transform: uppercase;
+}
+
+.history__post-date {
+  font-size: @font-size-mini - 2px;
+}
+
+.history__post-text {
+  font-family: @font-family;
+}

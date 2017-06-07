@@ -25,4 +25,19 @@
 .social__link {
   color: @text-color-menu;
   font-size: @font-size-mini - 1px;
+
+  &:hover {
+    color: shade(@text-color-menu, 50%);
+  }
+
+  &--team {
+    color: @text-color;
+    font-size: @font-size-normal;
+
+    &:hover {
+      color: fade(@text-color, 70);
+    }
+  }
+
+
 }

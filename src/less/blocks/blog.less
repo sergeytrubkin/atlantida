@@ -1,0 +1,141 @@
+.blog {
+  background-color: @bg-color-section;
+}
+
+.blog__wrapper {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0 70px;
+}
+
+.blog__heading {
+  margin-bottom: 30px;
+}
+
+.blog__text {
+  width: 80%;
+  margin: 0 auto;
+
+  text-align: center;
+  line-height: @line-height-normal;
+}
+
+.blog__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  height: 820px;
+
+  &:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+}
+
+.blog__img {
+  height: 50%;
+
+  background-position: center center;
+  background-size: cover;
+}
+
+.blog__item {
+
+  &:first-child .blog__img {
+    background-image: url("../../img/blog-img1.jpg");
+  }
+
+  &:nth-child(2) .blog__img {
+    background-image: url("../../img/blog-img2.jpg");
+  }
+
+  &:nth-child(3) .blog__img {
+    background-image: url("../../img/blog-img3.jpg");
+  }
+
+  &:last-child .blog__img {
+    background-image: url("../../img/blog-img4.jpg");
+  }
+}
+
+.blog__item-text-block {
+  height: 50%;
+  margin: 0;
+  padding: 45px 10%;
+
+  background-color: @bg-color-dark;
+  color: @text-color-light;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.blog__item-time-and-autor {
+  display: inline-block;
+  width: 60%;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid fade(@border-color-light, 20%);
+  font-size: @font-size-mini - 1px;
+}
+
+.blog__item-heading {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-left: 15px;
+
+  color: @text-color-light;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: @font-size-mini;
+  font-family: "Montserrat";
+
+  box-sizing: border-box;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+
+    width: 0;
+    height: 0;
+
+    border: 4px solid @text-color-light;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
+.blog__item-text {
+  color: @text-color-blog;
+  line-height: @line-height-small;
+}

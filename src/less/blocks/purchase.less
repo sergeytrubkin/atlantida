@@ -1,0 +1,44 @@
+.purchase {
+  background-color: @bg-color-dark;
+}
+
+.purchase__wrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  color: @text-color-light;
+}
+
+.purchase__text-block {
+  position: relative;
+  padding-left: 150px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 109px;
+    height: 104px;
+
+    background-image: url("../../img/compass.png");
+  }
+}
+
+.purchase__heading {
+  font-family: "Montserrat";
+  font-size: @font-size-normal + 1px;
+  font-weight: @font-weight-normal;
+  letter-spacing: .15em;
+}
+
+.purchase__link-block {
+  width: 100% / 3;
+  text-align: center;
+}

@@ -1,0 +1,90 @@
+.team {
+  background-image: url("../../img/team-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.team__wrapper {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.team__heading {
+  margin-bottom: 30px;
+}
+
+.team__text {
+  margin: 0;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+
+  @media (max-width: 1169px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  position: relative;
+  width: 271px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1169px) {
+    margin-bottom:  30px;
+  }
+}
+
+.team__item-info-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  width: 100% - 5px;
+  height: 100% - 5px;
+  padding: 20px 20px 40px 20px;
+  box-sizing: border-box;
+
+  background-color: rgba(255, 255, 2555, 0.85);
+}
+
+.team__name {
+  font-family: "Montserrat";
+  margin-bottom: 5px;
+}
+
+.team__profession {
+  display: inline-block;
+  width: 70%;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+
+  border-bottom: 2px solid @border-color;
+
+  text-align: left;
+  font-style: italic;
+}
+
+.team__visible {
+  display: none;
+}
