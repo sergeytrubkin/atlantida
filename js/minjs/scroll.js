@@ -1,0 +1,1 @@
+var $page=$("html, body");$('a[href*="#"]').click(function(){return $page.animate({scrollTop:$($.attr(this,"href")).offset().top},700),!1});
