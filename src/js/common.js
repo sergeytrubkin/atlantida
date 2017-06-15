@@ -9,3 +9,18 @@ $(".team__item").mouseout(function() {
 });
 
 
+/*   проверка на длинну сообщения review    */
+
+var review = $('.reviews__text');
+
+for (var i = 0; i < review.length; i++) {
+  if (review[i].textContent.length > 250) {
+    review[i].textContent = (review[i].textContent.slice(0, 251) + "..." + review[i].textContent.slice(-1));
+  }
+}
+
+
+
+
+// console.log(review[0].textContent > 50)
+
