@@ -3167,7 +3167,7 @@ h3 {
   background-image: url("../img/Idea.png");
 }
 .services__icon--second {
-  background-image: url("../../img/Monitor.png");
+  background-image: url("../img/Monitor.png");
 }
 .services__icon--third {
   background-image: url("../img/Combo-chart.png");
@@ -3235,7 +3235,7 @@ h3 {
   z-index: 10;
 }
 .history__year--bg {
-  background: #3e3d3d url("../../img/Idea.png") center center no-repeat / 50% 50%;
+  background: #3e3d3d url("../img/Idea.png") center center no-repeat / 50% 50%;
 }
 .history__row-block-post {
   display: -ms-flexbox;
@@ -3281,7 +3281,7 @@ h3 {
   font-family: "Crimson Text", serif;
 }
 .team {
-  background-image: url("../../img/team-bg.jpg");
+  background-image: url("../img/team-bg.jpg");
   background-position: center top;
   background-size: cover;
 }
@@ -3589,7 +3589,7 @@ h3 {
   transform: translateY(-50%);
   width: 109px;
   height: 104px;
-  background-image: url("../../img/compass.png");
+  background-image: url("../img/compass.png");
 }
 .purchase__heading {
   font-family: "Montserrat";
@@ -3643,16 +3643,16 @@ h3 {
   background-size: cover;
 }
 .blog__item:first-child .blog__img {
-  background-image: url("../../img/blog-img1.jpg");
+  background-image: url("../img/blog-img1.jpg");
 }
 .blog__item:nth-child(2) .blog__img {
-  background-image: url("../../img/blog-img2.jpg");
+  background-image: url("../img/blog-img2.jpg");
 }
 .blog__item:nth-child(3) .blog__img {
-  background-image: url("../../img/blog-img3.jpg");
+  background-image: url("../img/blog-img3.jpg");
 }
 .blog__item:last-child .blog__img {
-  background-image: url("../../img/blog-img4.jpg");
+  background-image: url("../img/blog-img4.jpg");
 }
 .blog__item-text-block {
   height: 50%;
@@ -3729,7 +3729,7 @@ h3 {
   font-size: 0;
 }
 .reviews {
-  background-image: url("../../img/review-bg.jpg");
+  background-image: url("../img/review-bg.jpg");
   background-position: center top;
   background-size: cover;
 }
@@ -3809,7 +3809,7 @@ h3 {
 #map {
   width: 100%;
   height: 500px;
-  background-image: url(../../img/marker-map.png), url(../../img/Map.jpg);
+  background-image: url(../img/marker-map.png), url(../img/Map.jpg);
   background-position: 40% 50%, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: auto;
