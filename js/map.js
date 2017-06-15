@@ -165,7 +165,7 @@ function initMap() {
     ]
 
   });
-  var image = '../img/marker-map.png';
+  var image = 'img/marker-map.png';
   var beachMarker = new google.maps.Marker({
     position: uluru,
     map: map,
