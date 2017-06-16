@@ -3778,6 +3778,10 @@ h3 {
 .reviews__autor-name {
   margin-bottom: 35px;
   text-transform: uppercase;
+  font-style: normal;
+}
+.reviews__autor-company {
+  font-style: italic;
 }
 .reviews__control {
   display: inline-block;
@@ -3909,6 +3913,18 @@ textarea:active {
 }
 .footer-page__copyright-text {
   color: #949494;
+}
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../img/icon_top.png') no-repeat;
+  z-index: 10;
 }
 @media (min-width: 1480px) {
   .history__post {

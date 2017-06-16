@@ -19,8 +19,24 @@ for (var i = 0; i < review.length; i++) {
   }
 }
 
+/*    плавный скролл    */
 
+var $page = $('html, body');
 
+$('a[href*="#"]').click(function() {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 700);
+  return false;
+});
 
-// console.log(review[0].textContent > 50)
+/*    кнопка button-up    */
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+  } else {
+    $('.scrollup').fadeOut();
+  }
+});
 
